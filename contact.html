@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gago">
+        <nav>
+          <img src="logo.jpg" class="logo">
+            
+          
+            <ul>
+                 <li class="home"><a href="index.html">HOME</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+                 <li><a href="about.html">ABOUT</a></li>
+                 <a href="https://www.facebook.com/marcuss09" class="fb" style="width:100px;
+                 height:100px;">
+                     <ion-icon name="logo-facebook"></ion-icon>
+                     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                 </a>
+         <a href="https://www.tiktok.com/@marcuxro" class="tiktok">
+             <ion-icon name="logo-tiktok"></ion-icon>
+             
+             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+         </a>
+                 <a href="instagram.com/marcussalopaso" class="instagram">
+                     <ion-icon name="logo-instagram"></ion-icon>
+                     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                 </a>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="ulol">
+        <form onsubmit="sendemail(); reset(); return false;">    
+            
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="text" id="email" placeholder="Your E-mail" required>
+            <input type="text" id="phone" placeholder="Your phone number" required>
+            <textarea  id="Message"  rows="10" placeholder="Sabihin mo na gusto mo sabihin nahiya ka pang gago ka hahaha"></textarea>
+            <button type="submit" class="btnn">Send</button>
+
+        </form>
+
+        <h9>Message Me</h9>
+
+        <script src="https://smtpjs.com/v3/smtp.js">    </script>
+        <script>
+            function sendemail(){
+                
+
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                     Username : "marcussalopaso1@gmail.com",
+                    Password : "5FA8AE0B5D695713020F59739AFA2B4DC755",
+                    To : document.getElementById("email").value,
+                     From :  "marcussalopaso1@gmail.com",
+                     Subject : "new contact form message",
+                    Body : "And this is the body"
+                       }).then(
+                message => alert(message)
+                       );
+            };
+
+            
+        </script>
+
+    </div>
+
+    <a href="" class="location">
+        <ion-icon name="location-outline"></ion-icon>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </a>
+
+    
+    <a href="" class="phone">
+       
+        <ion-icon name="call-outline"></ion-icon>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </a>
+    
+    <a href="" class="email">
+        <span class="rek">whahah kung may sasabihin ka just fill up the fcking forms, Salamat.</span>
+        <span class="connect">CONTACT ME</span>
+        <span class="haha">Marcussalopaso1@gmail.com</span>
+        <span class="em">Email</span>
+        <span class="gag">Phone</span>
+        <span class="ayaw">ayaw ko din sabihin whahhahaha</span>
+        <span class="address">Address</span>
+        <span class="par">bakit ko sasabihin gago hahahhaa</span>
+        
+        <ion-icon name="mail-outline"></ion-icon>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </a>
+    
+
+   
+
+</body>
+</html>
